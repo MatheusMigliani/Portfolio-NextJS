@@ -41,7 +41,7 @@ export default function Skills() {
     },
   ];
   return (
-    <div>
+    <div className="">
       <HoverEffect items={skills} />
     </div>
   );

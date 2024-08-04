@@ -4,23 +4,22 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { Vortex } from "@/components/ui/vortex";
 import { HoverCard } from "@radix-ui/react-hover-card";
 import Heropage from "./hero";
+import { WavyBackground } from "@/components/ui/wavy-background";
 
 export default function Home() {
   return (
-    <Vortex
-      baseHue={175}
-      rangeY={400}
-      backgroundColor="black"
+    <WavyBackground
+      backgroundFill="black"
       containerClassName=" "
-      className=" mx-auto w-full h-full min-h-screen"
+      className="  w-full h-full min-h-screen"
     >
-      <div className="min-h-screen">
-        <div className="max-w-7xl mx-auto">
+      <div className=" w-full h-full min-h-screen">
+        <div className="w-full h-full max-w-7xl mx-auto">
           <Navbar />
           <Heropage />
         </div>
       </div>
-    </Vortex>
+    </WavyBackground>
   );
 }
 {

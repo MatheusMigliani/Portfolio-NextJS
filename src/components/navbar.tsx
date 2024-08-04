@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="py-10 flex justify-between items-center ">
-      <h1 className="text-2xl font-bold underline underline-offset-8 text-white decoration-blue-500 hover:scale-125 transition-all">
+      <h1 className="text-2xl font-bold underline underline-offset-8 text-white decoration-cyan-500 hover:scale-125 transition-all">
         Matheus Migliani
       </h1>
       <div className="flex items-center gap-5">

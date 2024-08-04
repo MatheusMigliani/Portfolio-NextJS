@@ -18,7 +18,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
+        "grid grid-cols-2 align-middle md:grid-cols-3  lg:grid-cols-4  py-10 ",
         className
       )}
     >
@@ -34,7 +34,7 @@ export const HoverEffect = ({
             <AnimatePresence>
               {hoveredIndex === idx && (
                 <motion.span
-                  className="absolute inset-0 h-full w-full  dark:bg-slate-800/[0.8] block  rounded-lg"
+                  className="absolute inset-0 h-full w-full shadow-md border-cyan-500 bg-gray-400/[0.2] block dark:bg-purple-500/[0.8]   rounded-2xl"
                   layoutId="hoverBackground"
                   initial={{ opacity: 0 }}
                   animate={{
@@ -48,11 +48,13 @@ export const HoverEffect = ({
                 />
               )}
             </AnimatePresence>
-            <div className=" cursor-pointer rounded-md w-full overflow-hidden bg-stone-900 group-hover:ring-4 ring-purple-500 relative z-20 transition-all duration-500">
-              <div className=" py-10 z-50 relative space-y-5">
+            <div className="px-10 w-full h-full shadow-lg align-middle   border-purple-400/[0.5] border-2 cursor-pointer rounded-md   bg-zinc-900 group-hover:border-purple-500 relative z-20 transition-all duration-500">
+              <div className="align-middle shadow-lg  py-10 z-50 relative space-y-5 ">
                 <Icon className="w-8 h-8 mx-auto color fill-white " />
-                <p className="text-2xl font-bold text-center text-white">
-                  {item.text}
+                <p className="align-middle text-xl font-semibold antialiased justify-center  text-center text-white">
+                  <div className="flex align-middle justify-center text-center">
+                    {item.text}
+                  </div>
                 </p>
               </div>
             </div>

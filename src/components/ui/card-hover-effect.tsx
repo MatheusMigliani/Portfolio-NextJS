@@ -27,7 +27,6 @@ export const HoverEffect = ({
       {items.map((item, idx) => {
         const Icon = item.Icon;
         const color = `fill-${item.color}-${item.colornumber}`;
-      
 
         return (
           <div
@@ -55,7 +54,10 @@ export const HoverEffect = ({
             </AnimatePresence>
             <div className="px-10 w-full h-full shadow-lg align-middle blue   border-purple-400/[0.5] border-2 cursor-pointer rounded-md   bg-zinc-900 group-hover:border-purple-500 relative z-20 transition-all duration-500">
               <div className="align-middle shadow-lg  py-10 z-50 relative space-y-5 ">
-                <Icon className={`w-8 h-8 mx-auto ${color} `} />
+                <Icon
+                  className={`w-8 h-8 mx-auto ${color}  `}
+                  style={{ color:item.color }}
+                />
                 <p className="align-middle text-xl font-semibold antialiased justify-center  text-center text-white">
                   <div className="flex align-middle justify-center text-center">
                     {item.text}

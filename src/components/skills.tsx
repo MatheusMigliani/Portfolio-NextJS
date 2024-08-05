@@ -44,19 +44,19 @@ export default function Skills() {
     {
       text: "Bootstrap",
       Icon: SiBootstrap,
-      color: "purple",
+      color: "#553c7b",
       colornumber: "800",
     },
     {
       text: "Ionic",
       Icon: SiIonic,
-      color: "blue",
-      colornumber: "500",
+      color: "#498aff",
+      colornumber: "800",
     },
     {
       text: "PHP",
       Icon: SiPhp,
-      color: "blue",
+      color: "#787cb5",
       colornumber: "500",
     },
     {

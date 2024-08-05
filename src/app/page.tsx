@@ -8,32 +8,33 @@ import { WavyBackground } from "@/components/ui/wavy-background";
 
 export default function Home() {
   return (
-    <WavyBackground
-      backgroundFill="black"
-      containerClassName=" "
-      className="  w-full h-full min-h-screen"
-    >
-      <div className=" w-full h-full min-h-screen">
-        <div className="w-full h-full max-w-7xl mx-auto">
-          <Navbar />
-          <Heropage />
+    <div>
+      <WavyBackground
+        backgroundFill="black"
+        containerClassName=" "
+        className="  w-full h-full min-h-screen"
+      >
+        <div className=" w-full h-full min-h-screen">
+          <div className="w-full h-full max-w-7xl mx-auto">
+            <div>
+              <Navbar />
+            </div>
+            <div className="">
+              <Heropage />
+            </div>
+          </div>
+        </div>
+      </WavyBackground>
+      <div className="bg-black ">
+        <div className="  w-full h-full max-w-7xl mx-auto">
+          <h1 className="text-white text-5xl text-center">
+            Tecnologias que ja utilizei
+          </h1>
+          <div className="rounded-2xl translate-x-8">
+            <Skills />
+          </div>
         </div>
       </div>
-    </WavyBackground>
+    </div>
   );
-}
-{
-  /* <div className="min-h-screen">
-        <div className="text-2xl bg-slate-700 text-red-600 font-bold grid-cols-8 grid ">
-          <TextGenerateEffect
-            className="text-2xl text-red-600 font-bold "
-            words="Olá, meu nome é "
-          />
-        </div>
-        <div className=" bg-green-700 grid grid-cols-4 gap-4 ">
-          <Skills />
-        </div>
-      </div> */
-}
-{
 }

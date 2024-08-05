@@ -16,10 +16,16 @@ import { RxLinkedinLogo } from "react-icons/rx";
 import { RiLinkedinBoxFill } from "react-icons/ri";
 import { DiGithubFull } from "react-icons/di";
 import { MdOutlineEmail } from "react-icons/md";
+import EmailButton from "@/components/ui/tailwindcss-buttons";
+import { BiClipboard } from "react-icons/bi";
+import { GrResume } from "react-icons/gr";
+import { CgVercel } from "react-icons/cg";
+import { HiOutlineDocumentText } from "react-icons/hi";
+import { FaFileAlt } from "react-icons/fa";
 
 export default function Heropage() {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-wrap items-center justify-center">
       <div className="">
         <HeroHighlight>
           <motion.h1
@@ -35,44 +41,35 @@ export default function Heropage() {
               duration: 0.5,
               ease: [0.4, 0.0, 0.2, 1],
             }}
-            className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-200 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
+            className="text-1xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-200 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto "
           >
-            {" "}
-            <br />
             Olá 👋 <br />
             <Highlight className="text-white dark:text-white">
               {" "}
               Sou Matheus Migliani
             </Highlight>{" "}
+            <br/>
             <Highlight className="text-white dark:text-white ">
               Fullstack Web Developer
             </Highlight>
           </motion.h1>{" "}
           <div className="text-center   ">
-            <div className="gap-2 flex py-2 col-auto grid-cols-1 justify-center align-middle text-center  ">
-              <FaGithub className="size-10   fill-white" />
-              <FaLinkedin className="size-10   fill-white" />
-              <FaLinkedin className="size-10   fill-white" />
-              <FaLinkedin className="size-10   fill-white" />
+            <p className="text-2xl text-white">
+              Meu Currículo e Redes Sociais{" "}
+            </p>
+            <div className=" gap-2 flex py-2 col-auto grid-cols-1 justify-center align-middle text-center  ">
+              <FaFileAlt className="size-10 cursor-pointer hover:scale-110 transition-all fill-white" />
+              <FaGithub className="size-10 cursor-pointer  hover:scale-110 transition-all fill-white" />
+              <FaLinkedin className="cursor-pointer size-10 hover:scale-110 hover:fill-blue-500 transition-all  fill-white" />
             </div>
-            <p className="text-2xl text-white">teste</p>
-            
-            <div className="gap-2 flex py-2 col-span-1 grid-cols-1 justify-center align-middle text-center">
+
+            <div className="hover:scale-105 transition-all space-y-10 space-x-10 py-2">
               <Link href={"mailto:matheusmigliani@yahoo.com.br"}>
-                <div className="text-1xl text-white">clica email a </div>
-                <MdOutlineEmail className="size-10  fill-white" />
+                <EmailButton />
               </Link>{" "}
             </div>
           </div>
         </HeroHighlight>
-      </div>
-
-      <div className="flex gap-3 translate-x-8">
-        <div className="">
-          <div className="rounded-2xl">
-            <Skills />
-          </div>
-        </div>
       </div>
     </div>
   );

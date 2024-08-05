@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Black_And_White_Picture, Roboto } from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div>{children}</div>
+        <div className="">{children}</div>
       </body>
     </html>
   );

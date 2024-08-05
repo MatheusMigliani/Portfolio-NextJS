@@ -8,7 +8,9 @@ import {
   SiHtml5,
   SiIonic,
   SiJavascript,
+  SiLaravel,
   SiNodedotjs,
+  SiPhp,
   SiTailwindcss,
 } from "react-icons/si";
 
@@ -38,6 +40,14 @@ export default function Skills() {
     {
       text: "Ionic",
       Icon: SiIonic,
+    },
+    {
+      text: "PHP",
+      Icon: SiPhp,
+    },
+    {
+      text: "Laravel",
+      Icon: SiLaravel,
     },
   ];
   return (

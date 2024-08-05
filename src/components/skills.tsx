@@ -19,35 +19,51 @@ export default function Skills() {
     {
       text: "React",
       Icon: FaReact,
+      color: "cyan",
+      colornumber: "400",
     },
     {
       text: "Nodejs",
       Icon: SiNodedotjs,
+      color: "lime",
+      colornumber: "500",
     },
 
     {
       text: "JavaScript",
       Icon: SiJavascript,
+      color: "yellow",
+      colornumber: "500",
     },
     {
       text: "Tailwind",
       Icon: SiTailwindcss,
+      color: "cyan",
+      colornumber: "400",
     },
     {
       text: "Bootstrap",
       Icon: SiBootstrap,
+      color: "purple",
+      colornumber: "800",
     },
     {
       text: "Ionic",
       Icon: SiIonic,
+      color: "blue",
+      colornumber: "500",
     },
     {
       text: "PHP",
       Icon: SiPhp,
+      color: "blue",
+      colornumber: "500",
     },
     {
       text: "Laravel",
       Icon: SiLaravel,
+      color: "red",
+      colornumber: "500",
     },
   ];
   return (

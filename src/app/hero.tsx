@@ -1,26 +1,10 @@
-"use client";
-import Skills from "@/components/skills";
 
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
-import { LiaLinkedin, LiaLinkedinIn } from "react-icons/lia";
-import { BsLinkedin } from "react-icons/bs";
-import { FiLinkedin } from "react-icons/fi";
-import { CiLinkedin } from "react-icons/ci";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { ImLinkedin } from "react-icons/im";
-import { RxLinkedinLogo } from "react-icons/rx";
-import { RiLinkedinBoxFill } from "react-icons/ri";
-import { DiGithubFull } from "react-icons/di";
-import { MdOutlineEmail } from "react-icons/md";
 import EmailButton from "@/components/ui/tailwindcss-buttons";
-import { BiClipboard } from "react-icons/bi";
-import { GrResume } from "react-icons/gr";
-import { CgVercel } from "react-icons/cg";
-import { HiOutlineDocumentText } from "react-icons/hi";
 import { FaFileAlt } from "react-icons/fa";
 
 export default function Heropage() {
@@ -48,7 +32,7 @@ export default function Heropage() {
               {" "}
               Sou Matheus Migliani
             </Highlight>{" "}
-            <br/>
+            <br />
             <Highlight className="text-white dark:text-white ">
               Fullstack Web Developer
             </Highlight>

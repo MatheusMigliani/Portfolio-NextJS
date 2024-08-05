@@ -2,7 +2,9 @@
   "cSpell.enableFiletypes": ["prisma", "tailwindcss"],
   "cSpell.words": [
     "clsx",
+    "colornumber",
     "Heropage",
+    "Laravel",
     "lerp",
     "Linkedin",
     "Nodedotjs",

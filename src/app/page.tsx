@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/navbar";
 import Skills from "@/components/skills";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
@@ -28,7 +29,7 @@ export default function Home() {
       <div className="bg-black ">
         <div className="  w-full h-full max-w-7xl mx-auto">
           <h1 className="text-white text-5xl text-center">
-            Tecnologias que ja utilizei
+            Habilidades e competências
           </h1>
           <div className="rounded-2xl translate-x-8">
             <Skills />

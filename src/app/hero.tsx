@@ -1,11 +1,18 @@
-
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import EmailButton from "@/components/ui/tailwindcss-buttons";
+
 import { FaFileAlt } from "react-icons/fa";
+import dynamic from "next/dynamic";
+
+const EmailButton = dynamic(
+  () => import("@/components/ui/tailwindcss-buttons"),
+  {
+    ssr: false, // Disable server-side rendering for this component
+  }
+);
 
 export default function Heropage() {
   return (

@@ -19,7 +19,7 @@ export default function Skills() {
     {
       text: "React",
       Icon: FaReact,
-      color: "cyan",
+      color: "cyan",  
       colornumber: "400",
     },
     {

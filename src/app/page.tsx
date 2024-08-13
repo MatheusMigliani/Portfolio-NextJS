@@ -47,8 +47,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-black flex-wrap col-auto grid-cols-1 flex ">
-        <div className=" w-full h-full max-w-7xl mx-auto">
+      <div className="bg-black flex-wrap">
+        <div className="">
           <h1 className="text-white text-5xl text-center">Projetos</h1>
           <div>
             <CardData />

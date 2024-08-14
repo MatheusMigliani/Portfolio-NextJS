@@ -1,6 +1,10 @@
 {
   "cSpell.enableFiletypes": ["prisma", "tailwindcss"],
   "cSpell.words": [
+    "aiimg",
+    "bgimg",
+    "calsans",
+    "cartao",
     "clsx",
     "colornumber",
     "Heropage",
@@ -12,9 +16,11 @@
     "rocketseat",
     "tabler",
     "tailwindcss",
+    "telecall",
     "Telecall",
     "Viacep",
     "vortexpage",
-    "waitlist"
+    "waitlist",
+    "Yoom"
   ]
 }

@@ -8,7 +8,7 @@ export default function EmailButton() {
       </span>
       <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-0.5 px-4 ring-1 ring-white/10 ">
         <MdOutlineEmail className="size-10  fill-white" />
-        <span>Clique para enviar um email 😊</span>
+        <span className="font-bold text-1xl">Cliqu para entrar em contato 😊</span>
         <svg
           fill="none"
           height="16"
